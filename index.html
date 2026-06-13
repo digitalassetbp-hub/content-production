@@ -1128,7 +1128,7 @@ async function syncData(silent=false) {
 
 /* ═══ POST KE GAS ═══ */
 async function postToGAS(payload) {
-  if (!GAS_URL || GAS_URL === 'PASTE_GAS_URL_DISINI') return true; // skip kalau belum ada URL
+  if (!GAS_URL || GAS_URL === 'https://script.google.com/macros/s/AKfycbzvApM4E4rl1MqTfD5508SjFVi-e-sMYb9HCO1gQOO3Dr7RdD1ZmgMxnV3XkdAQgL9s/exec') return true; // skip kalau belum ada URL
 
   try {
     const resp = await fetch(GAS_URL, {
@@ -1181,7 +1181,7 @@ function save() {
 let toastT;
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2500);}
 
-
+init();
 </script>
 </body>
 </html>
